@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Lead",
+    "description": "Lead form submissions from the catering website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "enumeration",
+      "enum": [
+        "firemni",
+        "svatba",
+        "narozeniny",
+        "konference",
+        "ostatni"
+      ]
+    },
+    "eventDate": {
+      "type": "date"
+    },
+    "guestCount": {
+      "type": "integer"
+    },
+    "budget": {
+      "type": "enumeration",
+      "enum": [
+        "do_10000",
+        "od_10000_do_25000",
+        "od_25000_do_50000",
+        "od_50000_do_100000",
+        "nad_100000"
+      ]
+    },
+    "message": {
+      "type": "richtext",
+      "required": true
+    },
+    "utmSource": {
+      "type": "string"
+    },
+    "utmMedium": {
+      "type": "string"
+    },
+    "utmCampaign": {
+      "type": "string"
+    }
+  }
+}
